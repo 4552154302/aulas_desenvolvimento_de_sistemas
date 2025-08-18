@@ -1,3 +1,5 @@
+# Alunas: Ketlhyn Klebber e Larissa Thaiza
+
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel
 from typing import Dict
@@ -65,4 +67,5 @@ def deletar_aluno(id: int):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Aluno não encontrado")
     
     del db_alunos[id]
+
     return {"message": "Aluno deletado com sucesso!"}
