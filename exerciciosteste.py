@@ -59,21 +59,19 @@ def calcular_media(nota1, nota2, nota3):
 
 def numeros_ordem_decrescente(numero1, numero2, numero3):
     listaDeNumeros = [numero1, numero2, numero3]
+
     return f'A lista dos números em ordem decrescente é: {sorted(listaDeNumeros,reverse=True)}'
 
+# 7. Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um automóvel que faz
+# 	12 Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto na viagem e a velocidade média.
+# 	Desta forma, será possível obter a distância percorrida com a fórmula DISTANCIA = TEMPO * VELOCIDADE.
+# 	Tendo o valor da distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a
+# 	fórmula: LITROS_USADOS = DISTANCIA / 12. O programa deve apresentar os valores da velocidade média,
+# 	tempo gasto, a distância percorrida e a quantidade de litros utilizada na viagem. Dica: trabalhe com valores reais.
 
+def litros_usados_combustivel (tempogasto, velocidademedia):
 
+    distancia = tempogasto * velocidademedia
+    litrosUsados = distancia / 12
 
-
-
-
-
-
-    
-    
-
-
-
-
-    
-
+    return f'A quantidade de litros usados na viagem foi de: {litrosUsados}L'
